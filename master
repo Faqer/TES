@@ -1,0 +1,15 @@
+if GetObjectName(Getmyhero())~="Amumu" then return end
+
+require('Inspired')
+
+
+PrintChat("Amumu loaded.") 
+PrintChat("by Faqer")
+
+local AmumuMenu = MenuConfig("Amumu","Amumu")
+
+AmumuMenu:Menu("Combo","Combo")
+AmumuMenu.Combo:Booblean("Q","Use Q", true)
+AmumuMenu.Combo:Booblean("W","Use W", true)
+AmumuMenu.Combo:Booblean("E","Use E", true)
+AmumuMenu.Combo:Booblean("R","Use R", true)
