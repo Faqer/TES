@@ -1,7 +1,7 @@
 if GetObjectName(Getmyhero())~="Amumu" then return end
 
 require('Inspired')
-
+require('Deftlib')
 
 PrintChat("Amumu loaded.") 
 PrintChat("by Faqer")
@@ -13,3 +13,11 @@ AmumuMenu.Combo:Booblean("Q","Use Q", true)
 AmumuMenu.Combo:Booblean("W","Use W", true)
 AmumuMenu.Combo:Booblean("E","Use E", true)
 AmumuMenu.Combo:Booblean("R","Use R", true)
+AmumuMenu.Combo:Slider("Range", "Min range Q", 425,1, 750, 1)
+
+
+AmumuMenu:Menu("Harass","Harass")
+AmumuMenu.Harass:Booblean("Q","Use Q", true)
+AmumuMenu.Harass:Booblean("W","Use W", true)
+AmumuMenu.Harass:Booblean("E","Use E", true)
+AmumuMenu.Harass:Slider("Mana","Min Mana %", 30, 1, 100,1
