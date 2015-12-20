@@ -20,4 +20,4 @@ AmumuMenu:Menu("Harass","Harass")
 AmumuMenu.Harass:Booblean("Q","Use Q", true)
 AmumuMenu.Harass:Booblean("W","Use W", true)
 AmumuMenu.Harass:Booblean("E","Use E", true)
-AmumuMenu.Harass:Slider("Mana","Min Mana %", 30, 1, 100,1
+AmumuMenu.Harass:Slider("Mana","Min Mana %", 30, 1, 100,1)
