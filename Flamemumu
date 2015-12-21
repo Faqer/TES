@@ -33,3 +33,12 @@ AmumuMenu:Menu("Misc","Misc")
 AmumuMenu.Misc:Boolean("Autolvl", "Auto level", true)
 AmumuMenu.Misc:DropDown("Autolvltable", "Priority", 1, {"Q-W-E", "Q-E-W", "W-Q-E"})
 
+AmumuMenu:Menu("Draw","Draw")
+AmumuMenu.Draw:Boolean("Q", "Draw Q", true)
+AmumuMenu.Draw:Boolean("W", "Draw W", true)
+AmumuMenu.Draw:Boolean("R", "Draw R", true)
+
+
+
+
+
