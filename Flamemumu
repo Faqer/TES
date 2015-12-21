@@ -1,7 +1,14 @@
 if GetObjectName(Getmyhero())~="Amumu" then return end
 
 require('Inspired')
-require('Deftlib')
+require('Damagelib')
+
+local WebLuaFile = "/Faqer/TES/master/Flamemumu.lua"
+local WebVersion = "/Faqer/TES/master/Flamemumu.version"
+local LocalLua = "Flamemumu.lua"
+local LocalVersion = 1.0
+AutoUpdate(WebLuaFile, WebVersion, LocalLua, LocalVersion)
+
 
 PrintChat("Amumu loaded.") 
 PrintChat("by Faqer")
@@ -21,3 +28,8 @@ AmumuMenu.Harass:Booblean("Q","Use Q", true)
 AmumuMenu.Harass:Booblean("W","Use W", true)
 AmumuMenu.Harass:Booblean("E","Use E", true)
 AmumuMenu.Harass:Slider("Mana","Min Mana %", 30, 1, 100,1)
+
+AmumuMenu:Menu("Misc","Misc")
+AmumuMenu.Misc:Boolean("Autolvl", "Auto level", true)
+AmumuMenu.Misc:DropDown("Autolvltable", "Priority", 1, {"Q-W-E", "Q-E-W", "W-Q-E"})
+
