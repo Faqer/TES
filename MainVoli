@@ -22,20 +22,16 @@ VolinearMenu.Combo:Booblean("R","Use R", true)
 VolibearMenu.Combo:Slider("Range", "Min range Q", 425,1, 750, 1)
 
 
-AmumuMenu:Menu("Harass","Harass")
-AmumuMenu.Harass:Booblean("Q","Use Q", true)
-AmumuMenu.Harass:Booblean("W","Use W", true)
-AmumuMenu.Harass:Booblean("E","Use E", true)
-AmumuMenu.Harass:Slider("Mana","Min Mana %", 30, 1, 100,1)
+VolibearMenu:Menu("Harass","Harass")
+VolibearMenu.Harass:Booblean("Q","Use Q", true)
+VolibearMenu.Harass:Booblean("W","Use W", true)
+VolibearMenu.Harass:Booblean("E","Use E", true)
+VolibearMenu.Harass:Slider("Mana","Min Mana %", 30, 1, 100,1)
 
-AmumuMenu:Menu("Misc","Misc")
-AmumuMenu.Misc:Boolean("Autolvl", "Auto level", true)
-AmumuMenu.Misc:DropDown("Autolvltable", "Priority", 1, {"Q-W-E", "Q-E-W", "W-Q-E"})
+VolibearMenu:Menu("Misc","Misc")
+VolibearMenu.Misc:Boolean("Autolvl", "Auto level", true)
+VolibearMenu.Misc:DropDown("Autolvltable", "Priority", 1, {"Q-W-E", "Q-E-W", "W-Q-E"})
 
-AmumuMenu:Menu("Draw","Draw")
-AmumuMenu.Draw:Boolean("Q", "Draw Q", true)
-AmumuMenu.Draw:Boolean("W", "Draw W", true)
-AmumuMenu.Draw:Boolean("R", "Draw R", true)
 
       if IOW:Mode() == "Combo" then
 
