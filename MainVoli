@@ -1,26 +1,25 @@
-if GetObjectName(Getmyhero())~="Amumu" then return end
+if GetObjectName(Getmyhero())~="Volibear" then return end
 
 require('Inspired')
-require('Damagelib')
 
-local WebLuaFile = "/Faqer/TES/master/Flamemumu.lua"
-local WebVersion = "/Faqer/TES/master/Flamemumu.version"
-local LocalLua = "Flamemumu.lua"
+local WebLuaFile = "/Faqer/TES/master/MainVoli.lua"
+local WebVersion = "/Faqer/TES/master/MainVoli.version"
+local LocalLua = "MainVoli.lua"
 local LocalVersion = 1.0
 AutoUpdate(WebLuaFile, WebVersion, LocalLua, LocalVersion)
 
 
-PrintChat("Amumu loaded.") 
+PrintChat("MainVoli loaded.") 
 PrintChat("by Faqer")
 
-local AmumuMenu = MenuConfig("Amumu","Amumu")
+local VolibearMenu = MenuConfig("Volibear","Volibear")
 
-AmumuMenu:Menu("Combo","Combo")
-AmumuMenu.Combo:Booblean("Q","Use Q", true)
-AmumuMenu.Combo:Booblean("W","Use W", true)
-AmumuMenu.Combo:Booblean("E","Use E", true)
-AmumuMenu.Combo:Booblean("R","Use R", true)
-AmumuMenu.Combo:Slider("Range", "Min range Q", 425,1, 750, 1)
+VolibearMenu:Menu("Combo","Combo")
+VolibearMenu.Combo:Booblean("Q","Use Q", true)
+VolibearMenu.Combo:Booblean("W","Use W", true)
+VolibearMenu.Combo:Booblean("E","Use E", true)
+VolinearMenu.Combo:Booblean("R","Use R", true)
+VolibearMenu.Combo:Slider("Range", "Min range Q", 425,1, 750, 1)
 
 
 AmumuMenu:Menu("Harass","Harass")
@@ -38,7 +37,8 @@ AmumuMenu.Draw:Boolean("Q", "Draw Q", true)
 AmumuMenu.Draw:Boolean("W", "Draw W", true)
 AmumuMenu.Draw:Boolean("R", "Draw R", true)
 
+      if IOW:Mode() == "Combo" then
 
-
+              if CanUseSpell
 
 
