@@ -18,7 +18,7 @@ VolibearMenu:Menu("Combo","Combo")
 VolibearMenu.Combo:Booblean("Q","Use Q", true)
 VolibearMenu.Combo:Booblean("W","Use W", true)
 VolibearMenu.Combo:Booblean("E","Use E", true)
-VolinearMenu.Combo:Booblean("R","Use R", true)
+VolibearMenu.Combo:Booblean("R","Use R", true)
 VolibearMenu.Combo:Slider("Range", "Min range Q", 425,1, 750, 1)
 
 
